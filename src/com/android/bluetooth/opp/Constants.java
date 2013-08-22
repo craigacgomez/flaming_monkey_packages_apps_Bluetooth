@@ -190,7 +190,22 @@ public class Constants {
      * TODO: define correct type list
      */
     public static final String[] ACCEPTABLE_SHARE_OUTBOUND_TYPES = new String[] {
-        "image/*", "text/x-vcard",
+        "*",
+        "image/*",
+        "video/*",
+        "audio/*",
+        "text/x-vcard",
+        "text/plain",
+        "text/html",
+        "application/zip",
+        "application/vnd.ms-excel",
+        "application/msword",
+        "application/vnd.ms-powerpoint",
+        "application/pdf",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "application/vnd.android.package-archive",
     };
 
     /**
@@ -207,6 +222,7 @@ public class Constants {
      * Today, restricted to images, audio, video and certain text types.
      */
     public static final String[] ACCEPTABLE_SHARE_INBOUND_TYPES = new String[] {
+        "*",
         "image/*",
         "video/*",
         "audio/*",
@@ -221,6 +237,7 @@ public class Constants {
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "application/vnd.android.package-archive",
     };
 
     /**
@@ -229,6 +246,7 @@ public class Constants {
      */
     public static final String[] UNACCEPTABLE_SHARE_INBOUND_TYPES = new String[] {
         "text/x-vcalendar",
+        "virus/*",
     };
 
     /** Where we store Bluetooth received files on the external storage */
